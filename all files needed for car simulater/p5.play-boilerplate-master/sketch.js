@@ -1,5 +1,6 @@
 var car;
 var wall;
+var speed,weight;
 var deformation=0.5*weight*speed*speed/22509
 
 
@@ -24,7 +25,7 @@ car.velocityX=0;
 car.shapeColor="red"
 }
 
-if(deformation<100){
+if(deformation<100&&deformation>0){
 
 car.shapeColor=color(0,225,0)
 
